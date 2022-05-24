@@ -1,10 +1,10 @@
-const catchProducts = () => fetch("http://localhost:3000/Products").then(response=>response.json());
+const catchProducts = () => fetch("https://my-json-server.typicode.com/JavierGonzalezCh/OracleOne_Ecommerce/Products").then(response=>response.json());
 
-const catchProduct = (id) => fetch(`http://localhost:3000/Products/${id}`).then(response=>response.json());
+const catchProduct = (id) => fetch(`https://my-json-server.typicode.com/JavierGonzalezCh/OracleOne_Ecommerce/Products/${id}`).then(response=>response.json());
 
 const createProduct = (img,name,price,type,description) => {
     return (
-        fetch("http://localhost:3000/Products",{
+        fetch("https://my-json-server.typicode.com/JavierGonzalezCh/OracleOne_Ecommerce/Products",{
             method: "POST",
             headers: {
                 "Content-Type":"application/json"
@@ -15,7 +15,7 @@ const createProduct = (img,name,price,type,description) => {
 
 const uploadProduct = (img,name,price,type,description,id) => {
     return (
-        fetch(`http://localhost:3000/Products/${id}`,{
+        fetch(`https://my-json-server.typicode.com/JavierGonzalezCh/OracleOne_Ecommerce/Products/${id}`,{
             method: "PUT",
             headers: {
                 "Content-Type":"application/json"
@@ -26,7 +26,7 @@ const uploadProduct = (img,name,price,type,description,id) => {
 
 const deleteProducts = (id) =>{
     return (
-        fetch(`http://localhost:3000/Products/${id}`,{
+        fetch(`https://my-json-server.typicode.com/JavierGonzalezCh/OracleOne_Ecommerce/Products/${id}`,{
             method: "DELETE"
     })) 
 }
