@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/other/icono.png">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/layout/login.css">
+    <title>Iniciar Sesion - Alura Geek</title>
+</head>
+<body>
+    <header class="header"> 
+        <a href="../index.html"><img src="../img/other/Logo.png" alt="AluraGeek"></a>  
+        <input class="search" type="text" placeholder="¿Qué deseas buscar?">
+        <a class="login" href="login.html">Login</a>
+        <img src="img/other/lupa.png" alt="buscar" class="lupa">
+    </header>
+    <main>
+        <section class="container">
+            <form class="form" id="login">
+                <h1>Iniciar sesion</h1>
+                <ul id="loginErrors" class="errors hidden"></ul>
+                <input type="text" id="loginEmail" placeholder="Escriba su correo electronico">
+                <input type="password" id="loginPwd" placeholder="Escriba su contraseña">
+                <button id="loginSubmit">Entrar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section class="contact">
+            <a href="../index.html"><img src="../img/other/Logo.png" alt="AluraGeek"></a>  
+            <ul class="contact-list">
+                <li><a href="#" class="contact-link" target="_blank">Quienes somos</a></li>
+                <li><a href="#" class="contact-link" target="_blank">Politica de privacidad</a></li>
+                <li><a href="#" class="contact-link" target="_blank">Programa de fidelidad</a></li>
+                <li><a href="#" class="contact-link" target="_blank">Nuestras tiendas</a></li>
+                <li><a href="#" class="contact-link" target="_blank">Quiero ser franquiciado</a></li>
+                <li><a href="#" class="contact-link" target="_blank">Anuncie aqui</a></li>
+            </ul>
+            <form class="contact-form" id="contact">
+                <h3>Hable con nosotros</h3>
+                <ul id="contactErrors" class="errors"></ul>
+                <label for="contact-name" class="label">Nombre</label>
+                <input type="text" class="input" id="contactName">
+                <textarea class="textarea" type="text" id="contactMessage" name="contact-message" placeholder="Escribe tu mensaje"></textarea>
+                <button id="contactSubmit">Enviar Mensaje</button>
+            </form>
+        </section>
+        <p class="developer">
+            Desarrollado por: Javier Gonzalez. <br>
+            Contacto: javiergo.2502@gmail.com
+        </p>
+    </footer>
+    <script type="module" src="/Back-End/controllers/login.js"></script>
+</body>
+</html>

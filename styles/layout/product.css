@@ -1,0 +1,50 @@
+/* Product */
+.product-details{
+    width: 80%;
+    margin: auto;
+    padding: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.product-details-img{
+    max-width: 570px;
+    min-width: 350px;
+}
+.product-details-content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.title{
+    font-size: 3.2rem;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+.price{
+    font-size: 1rem;
+    font-weight: bolder;
+    margin: 0;
+}
+.description{
+    font-size: 1rem;
+    font-weight: lighter;
+    color: rgba(70, 70, 70, 1);
+    line-height: 19px;
+}
+
+/* Other Products */
+.subtitle{
+    top: 10%;
+}
+/* RESPONSIVE */
+@media (max-width: 700px) {
+    .product-details{
+        flex-direction: column;
+        padding: 0;
+    }
+    .product-details-img{
+        max-width: 300px;
+    }
+
+}

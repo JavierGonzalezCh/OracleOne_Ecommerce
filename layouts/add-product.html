@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/other/icono.png">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/layout/add-product.css">
+    <title>Nuevo producto - Alura Geek</title>
+</head>
+<body>
+    <header class="header"> 
+        <a href="../index.html"><img src="../img/other/Logo.png" alt="AluraGeek"></a>  
+        <input class="search" type="text" placeholder="¿Qué deseas buscar?">
+        <a class="login" href="login.html">Login</a>
+        <img src="../img/other/lupa.png" alt="buscar" class="lupa">
+    </header>
+    <main>
+        <form class="form" id="form" data-form>
+            <h1>Agregar nuevo producto</h1>
+            <label class="label" for="product-name">Url de la imagen</label>
+            <input class="input" id="product-name" type="text" data-img>
+            <label class="label" for="product-name">Nombre del producto</label>
+            <input class="input" id="product-name" type="text" data-name>
+            <label class="label" for="product-type">Tipo de producto</label>
+            <select class="input" id="product-type" data-type>
+                <option disabled >Seleccione una opcion</option>
+                <option value="starwars">Star Wars</option>
+                <option value="consoles">Consolas</option>
+                <option value="various">Varios</option>
+            </select>
+            <label class="label" for="product-price">Precio del producto</label>
+            <input class="input" id="product-price" type="number" data-price>
+            <textarea class="textarea" placeholder="Descripcion del producto" data-description></textarea>
+            <button type="submit">Agregar producto</button>
+        </form>
+    </main>
+    <footer>
+        <section class="contact">
+            <a href="../index.html"><img src="../img/other/Logo.png" alt="AluraGeek"></a>  
+            <ul class="contact-list">
+                <li><a href="#" class="contact-link" target="_blank">Quienes somos</a></li>
+                <li><a href="#" class="contact-link" target="_blank">Politica de privacidad</a></li>
+                <li><a href="#" class="contact-link" target="_blank">Programa de fidelidad</a></li>
+                <li><a href="#" class="contact-link" target="_blank">Nuestras tiendas</a></li>
+                <li><a href="#" class="contact-link" target="_blank">Quiero ser franquiciado</a></li>
+                <li><a href="#" class="contact-link" target="_blank">Anuncie aqui</a></li>
+            </ul>
+            <form class="contact-form" action="">
+                <h3>Hable con nosotros</h3>
+                <label class="label" for="contact-name">Nombre</label>
+                <input class="input" type="text" name="" id="contact-name">
+                <textarea class="textarea" type="text" name="contact-message" placeholder="Escribe tu mensaje" ></textarea>
+                <button>Enviar Mensaje</button>
+            </form>
+        </section>
+        <p class="developer">
+            Desarrollado por: Javier Gonzalez. <br>
+            Contacto: javiergo.2502@gmail.com
+        </p>
+    </footer>
+    <script type="module" src="/Back-End/controllers/createProduct.js"></script>
+</body>
+</html>

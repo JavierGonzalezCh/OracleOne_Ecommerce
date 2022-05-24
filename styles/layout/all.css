@@ -1,0 +1,47 @@
+.subtitle{
+    position: relative;
+    top: 3rem;
+}
+.add{
+    display: block;
+    position: relative;
+    top: -15px;
+    left: 73vw;
+
+    width: 150px;
+    text-align: center;
+    background-color: var(--color1);
+    color: white;
+    padding: 1rem 0;
+    transition: 0.5s;
+}
+.add:hover{
+    background-color: rgb(49, 138, 255);
+}
+.edit, .delete{
+    position: relative;
+    transition: all 0.1s;
+}
+.edit{
+    display: inline-block;
+    top: 30px;
+    left: 130px;
+}
+.delete{
+    top: 30px;
+    left: 120px;
+}
+.edit:hover, .delete:hover{
+    scale: 1.2;
+}
+
+@media (max-width: 620px) {
+    .subtitle{
+        margin-bottom: 3rem;
+    }
+    .add{
+        top: .3rem;
+        left: 10vw;
+    }
+
+}
