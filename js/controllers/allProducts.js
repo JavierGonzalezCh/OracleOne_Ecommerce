@@ -17,15 +17,15 @@ function showProduct(id,img,name,price) {
     const product = 
     `   
         <div>
-            <input type="image" class="delete" id="delete${id}" src="/Front-End/img/other/trash.png">
-            <a class="edit" id="edit" href="/Front-End/layouts/edit-product.html?id=${id}">
-                <img src="/Front-End/img/other/pen.png">
+            <input type="image" class="delete" id="delete${id}" src="/img/other/trash.png">
+            <a class="edit" id="edit" href="/layouts/edit-product.html?id=${id}">
+                <img src="/img/other/pen.png">
             </a>
             <img class="product-img" src="${img}" alt="${name}">
         </div>
         <figcaption class="product-name">${name}</figcaption>
         <p class="product-price">$ ${price},00</p>
-        <a class="product-link" href="/Front-End/layouts/product.html?id=${id}">Ver producto</a>
+        <a class="product-link" href="/layouts/product.html?id=${id}">Ver producto</a>
     `
     figure.innerHTML = product;
     const btnDelete = figure.querySelector(`#delete${id}`)

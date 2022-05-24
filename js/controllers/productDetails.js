@@ -43,7 +43,7 @@ productServices.catchProducts().then(products=>{
                 <img class="product-img" src="${img}" alt="${name}">
                 <figcaption class="product-name">${name}</figcaption>
                 <p class="product-price">$ ${price},00</p>
-                <a class="product-link" href="/Front-End/layouts/product.html?id=${id}">Ver producto</a>
+                <a class="product-link" href="/layouts/product.html?id=${id}">Ver producto</a>
             </figure>
         `
         galery.innerHTML= galery.innerHTML + newProduct

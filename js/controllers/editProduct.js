@@ -33,6 +33,6 @@ form.addEventListener("submit",(e)=>{
 
     productServices.uploadProduct(img,name,price,type,description,id)
         .then(()=>{
-            window.location.href = "/Front-End/layouts/all.html";
+            window.location.href = "/layouts/all.html";
         })
 })
